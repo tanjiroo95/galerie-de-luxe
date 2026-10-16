@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Administration – Galerie de Luxe</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- Connexion / création du mot de passe -->
+<main class="auth" id="auth" hidden>
+  <form id="auth-form" class="box">
+    <h1>Galerie <em>de Luxe</em></h1>
+    <p id="auth-text"></p>
+    <input type="password" id="password" placeholder="Mot de passe" autocomplete="current-password" required>
+    <input type="password" id="password2" placeholder="Confirmez le mot de passe" autocomplete="new-password" hidden>
+    <p class="error" id="auth-error"></p>
+    <button class="primary" id="auth-btn">Se connecter</button>
+    <a class="back" href="index.html">← Retour au site</a>
+  </form>
+</main>
+
+<!-- Panneau d'administration -->
+<div id="panel" hidden>
+  <header class="bar">
+    <strong>Administration</strong>
+    <span>
+      <a class="link" href="index.html" target="_blank">Voir le site</a>
+      <button class="link" id="logout">Se déconnecter</button>
+    </span>
+  </header>
+
+  <main class="wrap">
+    <div class="top">
+      <h2>Mes articles <small id="count"></small></h2>
+      <button class="primary" id="add">+ Ajouter un article</button>
+    </div>
+    <p class="hint">Les modifications apparaissent tout de suite sur le site.</p>
+    <div class="list" id="list"></div>
+  </main>
+</div>
+
+<!-- Formulaire ajout / modification -->
+<div class="overlay" id="overlay" hidden>
+  <form class="dialog" id="form">
+    <h2 id="form-title">Ajouter un article</h2>
+
+    <label>Nom de l'article
+      <input id="f-name" maxlength="80" placeholder="Ex. Ballerines dorées" required>
+    </label>
+
+    <label>Catégorie
+      <input id="f-cat" list="cats" maxlength="40" placeholder="Ex. Ballerines, Baskets, Sacs…" required>
+      <datalist id="cats"></datalist>
+    </label>
+
+    <details class="tr" id="tr">
+      <summary>Traductions en arabe et en anglais (facultatif)</summary>
+      <p class="hint">Si vous laissez vide, le site affichera le nom en français.</p>
+      <label>Nom en arabe <input id="f-name-ar" dir="rtl" maxlength="80" placeholder="الاسم بالعربية"></label>
+      <label>Nom en anglais <input id="f-name-en" maxlength="80" placeholder="Name in English"></label>
+      <label>Catégorie en arabe <input id="f-cat-ar" dir="rtl" maxlength="40" placeholder="الفئة بالعربية"></label>
+      <label>Catégorie en anglais <input id="f-cat-en" maxlength="40" placeholder="Category in English"></label>
+    </details>
+
+    <div class="photos-label">Photos</div>
+    <div class="thumbs" id="thumbs"></div>
+    <label class="check">
+      <input type="checkbox" id="f-pro" checked>
+      <span>Rendre les photos professionnelles automatiquement <small>(IA : fond propre, produit centré, lumière améliorée)</small></span>
+    </label>
+    <label class="upload">
+      + Ajouter des photos
+      <input type="file" id="f-files" accept="image/jpeg,image/png,image/webp" multiple hidden>
+    </label>
+
+    <p class="status" id="f-status"></p>
+    <p class="error" id="form-error"></p>
+    <div class="actions">
+      <button type="button" id="cancel">Annuler</button>
+      <button class="primary" id="save">Enregistrer</button>
+    </div>
+  </form>
+</div>
+
+<script type="module" src="studio.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

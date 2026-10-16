@@ -1,0 +1,9 @@
+{
+  "name": "galeria-luxe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vitrine Galerie de Luxe Tétouan avec administration des articles",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

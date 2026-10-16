@@ -1,0 +1,15 @@
+# Déploiement Render (https://render.com) : le disque garde les photos et le mot de passe entre les redémarrages.
+services:
+  - type: web
+    name: galeria-luxe
+    runtime: node
+    plan: starter        # le disque persistant n'existe pas sur l'offre gratuite
+    buildCommand: "echo ok"
+    startCommand: node server.js
+    envVars:
+      - key: STORAGE_DIR
+        value: /var/data
+    disk:
+      name: galeria-data
+      mountPath: /var/data
+      sizeGB: 1

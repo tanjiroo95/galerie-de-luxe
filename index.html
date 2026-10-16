@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie de Luxe Tétouan</title>
+  <meta name="description" content="Galerie de Luxe à Tétouan : découvrez notre sélection de chaussures et de sacs de luxe pour femme.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top">Galerie <em>de Luxe</em><span data-i18n="city">Tétouan</span></a>
+  <nav>
+    <a href="#collection" data-i18n="nav_collection">Collection</a>
+    <a href="#apropos" data-i18n="nav_about">La Boutique</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Langue / اللغة / Language">
+    <button type="button" data-lang="fr" lang="fr">FR</button>
+    <button type="button" data-lang="ar" lang="ar">عربية</button>
+    <button type="button" data-lang="en" lang="en">EN</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow" data-i18n="hero_eyebrow"></p>
+    <h1 data-i18n="hero_title"></h1>
+    <p class="lead" data-i18n="hero_lead"></p>
+    <div class="hero-actions">
+      <a class="btn" href="#collection" data-i18n="hero_cta"></a>
+      <a class="btn btn-ghost" href="#contact" data-i18n="nav_contact"></a>
+    </div>
+  </div>
+</section>
+
+<section class="strip" aria-label="Galerie de Luxe">
+  <div class="strip-inner">
+    <span data-i18n="strip1"></span><i></i>
+    <span data-i18n="strip2"></span><i></i>
+    <span data-i18n="strip3"></span>
+  </div>
+</section>
+
+<section class="section" id="collection">
+  <div class="section-head reveal">
+    <p class="eyebrow" data-i18n="coll_eyebrow"></p>
+    <h2 data-i18n="coll_title"></h2>
+    <span class="rule"></span>
+  </div>
+  <div class="filters reveal" id="filters"></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="section about" id="apropos">
+  <div class="about-inner reveal">
+    <p class="eyebrow" data-i18n="about_eyebrow"></p>
+    <h2 data-i18n="about_title"></h2>
+    <span class="rule"></span>
+    <p class="about-text" data-i18n="about_text"></p>
+    <ul class="values">
+      <li><b>01</b><strong data-i18n="v1_t"></strong><span data-i18n="v1_d"></span></li>
+      <li><b>02</b><strong data-i18n="v2_t"></strong><span data-i18n="v2_d"></span></li>
+      <li><b>03</b><strong data-i18n="v3_t"></strong><span data-i18n="v3_d"></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="section-head reveal">
+    <p class="eyebrow" data-i18n="contact_eyebrow"></p>
+    <h2 data-i18n="contact_title"></h2>
+    <span class="rule"></span>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-card">
+      <h3 data-i18n="addr_t"></h3>
+      <p data-i18n="addr_text"></p>
+      <h3 data-i18n="phone_t"></h3>
+      <p><a href="tel:+212639744695" dir="ltr" class="phone">+212 639-744695</a></p>
+      <p class="actions">
+        <a class="btn" id="wa" href="https://wa.me/212639744695" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+212639744695" data-i18n="btn_call"></a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/galerieluxe2019" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-ghost" href="https://maps.app.goo.gl/AvRg9LcpbF7uGBnc9" target="_blank" rel="noopener" data-i18n="btn_route"></a>
+      </p>
+    </div>
+    <div class="map">
+      <iframe title="Galerie de Luxe – Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=GALERIA+LUXE,+Av.+Sidi+Mohamed+Al+Kharaz,+T%C3%A9touan,+Maroc&amp;output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="footer-logo">Galerie <em>de Luxe</em></p>
+  <p><span data-i18n="footer"></span> · <a class="admin-link" href="admin.html" data-i18n="admin"></a></p>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/212639744695" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16.02 3C8.84 3 3.01 8.83 3.01 16c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.72A12.97 12.97 0 0 0 16.02 29C23.2 29 29 23.17 29 16S23.2 3 16.02 3zm0 23.8c-1.95 0-3.86-.53-5.53-1.52l-.4-.24-3.96 1.02 1.06-3.86-.26-.4A10.74 10.74 0 0 1 5.2 16c0-5.96 4.86-10.8 10.82-10.8S26.8 10.04 26.8 16 21.98 26.8 16.02 26.8zm5.93-8.07c-.32-.16-1.92-.95-2.22-1.06-.3-.1-.52-.16-.73.17-.22.32-.84 1.06-1.03 1.28-.19.21-.38.24-.7.08-.32-.16-1.37-.5-2.6-1.6-.96-.86-1.6-1.91-1.8-2.23-.19-.32-.02-.5.14-.66.15-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.73-1.76-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.85.4-.3.32-1.12 1.1-1.12 2.68s1.15 3.1 1.31 3.32c.16.21 2.26 3.45 5.47 4.84.76.33 1.36.52 1.82.67.77.24 1.46.2 2.01.12.61-.09 1.92-.78 2.19-1.54.27-.75.27-1.4.19-1.54-.08-.13-.3-.21-.62-.37z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" type="button" aria-label="×">×</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="‹">‹</button>
+  <figure>
+    <img alt="">
+    <figcaption id="lb-caption"></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" type="button" aria-label="›">›</button>
+</div>
+
+<script src="data/products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

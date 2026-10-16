@@ -1,0 +1,102 @@
+[
+  {
+    "id": "p1",
+    "name": "Espadrilles monogramme",
+    "cat": "Espadrilles",
+    "images": [
+      "espadrille-monogramme.jpg"
+    ],
+    "name_ar": "إسبادريل بنقشة المونوغرام",
+    "name_en": "Monogram espadrilles"
+  },
+  {
+    "id": "p2",
+    "name": "Sac bandoulière rose",
+    "cat": "Sacs",
+    "images": [
+      "sac-rose.jpg"
+    ],
+    "name_ar": "حقيبة كتف وردية",
+    "name_en": "Pink crossbody bag"
+  },
+  {
+    "id": "p3",
+    "name": "Ballerines marine",
+    "cat": "Ballerines",
+    "images": [
+      "ballerine-marine.jpg"
+    ],
+    "name_ar": "حذاء باليرينا كحلي",
+    "name_en": "Navy ballet flats"
+  },
+  {
+    "id": "p4",
+    "name": "Baskets plateforme argent",
+    "cat": "Baskets",
+    "images": [
+      "sneaker-argent.jpg"
+    ],
+    "name_ar": "حذاء رياضي فضي بنعل مرتفع",
+    "name_en": "Silver platform sneakers"
+  },
+  {
+    "id": "p5",
+    "name": "Baskets mules denim",
+    "cat": "Baskets",
+    "images": [
+      "mule-denim.jpg"
+    ],
+    "name_ar": "حذاء رياضي دنيم مفتوح من الخلف",
+    "name_en": "Denim mule sneakers"
+  },
+  {
+    "id": "p6",
+    "name": "Baskets chaussettes pailletées",
+    "cat": "Baskets",
+    "images": [
+      "chaussette-pailletee.jpg"
+    ],
+    "name_ar": "حذاء رياضي بشكل جورب لامع",
+    "name_en": "Glitter sock sneakers"
+  },
+  {
+    "id": "p7",
+    "name": "Baskets compensées tressées",
+    "cat": "Baskets",
+    "images": [
+      "sneaker-tressee.jpg"
+    ],
+    "name_ar": "حذاء رياضي منسوج بكعب مخفي",
+    "name_en": "Woven wedge sneakers"
+  },
+  {
+    "id": "p8",
+    "name": "Ballerines dorées à cadenas",
+    "cat": "Ballerines",
+    "images": [
+      "ballerine-doree.jpg"
+    ],
+    "name_ar": "حذاء باليرينا ذهبي بقفل",
+    "name_en": "Gold padlock ballet flats"
+  },
+  {
+    "id": "p9",
+    "name": "Ballerines denim à nœud",
+    "cat": "Ballerines",
+    "images": [
+      "ballerine-denim.jpg"
+    ],
+    "name_ar": "حذاء باليرينا دنيم بعقدة",
+    "name_en": "Denim bow ballet flats"
+  },
+  {
+    "id": "p10",
+    "name": "Ballerines dorées matelassées",
+    "cat": "Ballerines",
+    "images": [
+      "ballerine-matelassee.jpg"
+    ],
+    "name_ar": "حذاء باليرينا ذهبي مبطّن",
+    "name_en": "Quilted gold ballet flats"
+  }
+]
